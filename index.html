@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: #fff;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.video-grid video {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  display: block;
+  background: #000;
+}
+
+@media (max-width: 700px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="video-grid">
+
+  <video controls playsinline preload="metadata">
+    <source src="https://res.cloudinary.com/pvwrvtb9/video/upload/v1791278936/23_CsDipn4S9VB.mp4" type="video/mp4">
+  </video>
+
+  <video controls playsinline preload="metadata">
+    <source src="https://res.cloudinary.com/pvwrvtb9/video/upload/v1791278935/25_9omgvBLck-V.mp4" type="video/mp4">
+  </video>
+
+  <video controls playsinline preload="metadata">
+    <source src="https://res.cloudinary.com/pvwrvtb9/video/upload/v1791278933/03_46ED7S-yazq.mp4" type="video/mp4">
+  </video>
+
+  <video controls playsinline preload="metadata">
+    <source src="https://res.cloudinary.com/pvwrvtb9/video/upload/v1791278929/02_PyRCBNVdehC.mp4" type="video/mp4">
+  </video>
+
+  <video controls playsinline preload="metadata">
+    <source src="https://res.cloudinary.com/pvwrvtb9/video/upload/v1791278929/31_4uU5IYIvetf.mp4" type="video/mp4">
+  </video>
+
+  <video controls playsinline preload="metadata">
+    <source src="https://res.cloudinary.com/pvwrvtb9/video/upload/v1791278923/32_WLPnLngoMdy.mp4" type="video/mp4">
+  </video>
+
+  <video controls playsinline preload="metadata">
+    <source src="https://res.cloudinary.com/pvwrvtb9/video/upload/v1791278920/04_IztL-N6BYNm.mp4" type="video/mp4">
+  </video>
+
+  <video controls playsinline preload="metadata">
+    <source src="https://res.cloudinary.com/pvwrvtb9/video/upload/v1791278920/30_5aBns_i2JY_.mp4" type="video/mp4">
+  </video>
+
+  <video controls playsinline preload="metadata">
+    <source src="https://res.cloudinary.com/pvwrvtb9/video/upload/v1791278913/29_2kHevD3Ej7y.mp4" type="video/mp4">
+  </video>
+
+</div>
+
+</body>
+</html>
